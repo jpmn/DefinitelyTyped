@@ -79,7 +79,7 @@ export interface InjectedFormProps<FormData = {}, P = {}> {
     clearAsyncError(field: string): void;
     destroy(): void;
     dirty: boolean;
-    error: string;
+    error: any;
     form: string;
     handleSubmit: SubmitHandler<FormData, P>;
     initialize(data: Partial<FormData>): void;
